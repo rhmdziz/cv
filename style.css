@@ -188,7 +188,7 @@ footer p {
 }
 @media (max-width: 578px) {
     main h1 {
-        font-size: 2rem;
+        font-size: 1.9rem;
     }
     aside {
         position: absolute;
