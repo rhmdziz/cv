@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    margin: 0 auto;
+    font-family: var(--font);
+}
+html {
+    scroll-behavior: smooth;
+}
+
+
+:root {
+    --font: 'Crimson Text', serif;
+    --pure-font: 'IBM Plex Sans', sans-serif;
+    --blue: #5c89fd;
+    --red: #ff4a4a;
+}
+
+body {
+    background-color: #f0f0f0;
+    position: relative;
+}
+
+main {
+    margin: 2rem auto 6rem;
+    background-color: #fff;
+    max-width: 80%;
+    box-shadow: 2px 4px 8px #00000010;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; 
+}
+main img {
+    width: 100%;
+    filter: saturate(0.4);
+}
+main h1 {
+    font-size: 2.4rem;
+}
+main h2 {
+    padding: 1.2rem 0 0 0;
+}
+main h3 {
+    padding: 0.4rem 0;
+    font-size: 1.3rem;
+}
+article {
+    width: 70%;
+    margin: 0;
+    padding: 3rem 2rem 3rem 3rem;
+    /* padding: 4%; */
+}
+
+aside {
+    width: 27.5%;
+    margin: 0;
+    padding: 3%;
+    background-color: #fafafa;
+}
+
+hr {
+    margin: 0.2rem 0;
+    border: 1px #11111166 solid;
+}
+a {
+    font-family: var(--pure-font);
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: #000;
+
+}
+
+.desc, li {
+    font-size: 0.9rem;
+    text-align: justify;
+    font-family: var(--pure-font);
+    /* font-weight: 300; */
+}
+
+li {
+    margin-left: -1rem;
+}
+.date {
+    font-size: 0.9rem;
+}
+.item {
+    padding: 0.5rem 0;
+}
+.item button {
+    background: none;
+    border: 1px #000 solid;
+    margin: 0.8rem 0;
+}
+.item button a {
+    font-size: 0.8rem;
+}
+.item button:hover {
+    box-shadow: 0 0 6px #00000044;
+    transition: 0.2s;
+
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+table td {
+    padding-right: 0.2rem;
+}
+
+.back {
+    font-size: 22rem;
+    font-weight: 800;
+    position: absolute;
+    z-index: -1;
+    filter: opacity(0.2);
+    color: #5c89fd;
+}
+
+.blue {
+    color: var(--blue);
+    font-weight: 500;
+    font-family: var(--pure-font);
+}
+.red {
+    color: var(--red);
+    font-weight: 500;
+    font-family: var(--pure-font);
+
+}
+
+
+
+
+.a {
+    top: -6rem;
+    left: -2rem;
+    transform: rotate(10deg);
+}
+.z {
+    top: 12rem;
+    left: -2rem;
+    transform: rotate(-10deg);
+}
+.i {
+    top: 28rem;
+    left: 2rem;
+    transform: rotate(5deg);
+}
+.z1 {
+    top: 44rem;
+    left: -2rem;
+    transform: rotate(-5deg);
+}
+.x, .y{
+    display: none;
+}
+
+footer p {
+    text-align: center;
+    font-family: var(--pure-font);
+    font-size: 0.9rem
+}
+
+#about {
+    display: none;
+}
+
+
+
+
+@media (max-width: 1024px) {
+    main {
+        max-width: 100%;
+        margin: 0 0 0 0;
+        position: relative;
+    }
+    article {
+        width: 100%;
+        padding: 2rem;
+    }
+    footer {
+        display: none;
+    }
+}
+@media (max-width: 578px) {
+    aside {
+        position: absolute;
+        position: fixed;
+        height: 100%;
+        top: 100%;
+        right: 0;
+        z-index: 99;
+        width: 40%;
+        transition: 0.4s;
+        padding: 2rem 0 0 0;
+        width: 100%;
+    }
+    aside #contact, aside #certification, aside #skill, aside #tool, aside #device, aside #about {
+        padding: 0 2rem;
+    }
+    aside img {
+        display: none;
+    }
+    .x {
+        display: block;
+        font-size: 2.4rem;
+    }
+    .y, .x {
+        display: block;
+        position: absolute;
+        right: 1rem;
+        bottom: 1rem;
+        font-size: 2rem;
+        color: #fff;
+        position: fixed;
+        background-color: var(--blue);
+        border-radius: 20rem;
+        padding: 0.6rem 1rem;
+        z-index: 88;
+        box-shadow: 2px 2px 8px #00000033;
+    }
+    .hide {
+        top: 0;
+        transition: 0.2s;
+    }
+    #about {
+        display: block;
+    }
+}
+
